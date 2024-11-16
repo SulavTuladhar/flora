@@ -4,7 +4,7 @@
 import axios from 'axios';
 
 // const cookies = new Cookies();
-const BASE_URL = 'http://172.28.144.1:9191/';
+const BASE_URL = 'http://192.168.1.107:9191/';
 const http = axios.create({
     baseURL: BASE_URL,
     timeout: 10000,
@@ -37,9 +37,6 @@ const GET = (url, isSecure = false, params = {}) => {
 };
 
 const POST = (url, data, isSecure = false, multipart = false, params = {}) => {
-    console.log('====================================');
-    console.log("url >> ", url);
-    console.log('====================================');
     return http.post(url, data, {
         headers: getHeaders(isSecure, multipart),
         params

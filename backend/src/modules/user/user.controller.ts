@@ -6,6 +6,7 @@ import { userDetail } from "../../configs/interfaces";
 import map_user_req from "../../helpers/map_user_req";
 import path from "path";
 const fs = require('fs');
+
 // Algorithm for geoFencing
 function calculateDistance(lat1: string, lon1: string, lat2: string, lon2: string) {
     // Convert latitude and longitude values from strings to numbers

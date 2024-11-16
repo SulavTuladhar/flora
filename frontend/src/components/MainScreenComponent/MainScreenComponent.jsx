@@ -5,9 +5,9 @@ import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 export default function MainScreenComponent({ props }) {
-    function navigate() {
-        props.navigation.navigate("Login")
-    }
+    // function navigate() {
+    //     props.navigation.navigate("Login")
+    // }
     return (
         <View style={{ flex: 1, position: 'relative' }}>
             <View style={{ padding: 10, flexDirection: 'column' }}>
@@ -31,7 +31,7 @@ export default function MainScreenComponent({ props }) {
                         flexDirection: 'row',
                         alignItems: 'center'
                     }}
-                    onPress={() => navigate()}
+                    // onPress={() => navigate()}
                 >
                     <Text style={{ color: '#fff', fontWeight: 'bold' }}>Explore</Text>
                     <Image source={require('../../images/icons/rightArrow.png')} style={{ height: 16, width: 26, tintColor: '#fff' }} />

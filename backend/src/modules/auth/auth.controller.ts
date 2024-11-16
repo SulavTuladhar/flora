@@ -64,6 +64,7 @@ export async function login(req: Request, res: Response, next: NextFunction) {
         if (!isMatched) {
             throw customError("Invalid credentials", 401);
         }
+        console.log({isMatched})
         var token = createToken(user.id);
         let userDetail: userDetail = user;
         delete userDetail.password;

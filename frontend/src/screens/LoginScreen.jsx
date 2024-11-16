@@ -8,23 +8,23 @@ import LoginComponent from '../components/LoginComponent/LoginComponent';
 const LoginScreen = props => {
 
     const dispatch = useDispatch();
-    useEffect(() => {
-        loginow();
-    }, []);
-    async function loginow() {
-        try {
-        } catch (err) {
-            console.log('error is >> ', err);
-        }
-    }
-    // async function saveUserDetail() {
-    //     const newData = {
-    //         'name': name,
-    //         'phone': phone
+    // useEffect(() => {
+    //     loginow();
+    // }, []);
+    // async function loginow() {
+    //     try {
+    //     } catch (err) {
+    //         console.log('error is >> ', err);
     //     }
-    //     storage.set('userDetail', JSON.stringify(newData));
-    //     setRefresh(!refresh);
     // }
+    async function saveUserDetail() {
+        const newData = {
+            'name': name,
+            'phone': phone
+        }
+        storage.set('userDetail', JSON.stringify(newData));
+        setRefresh(!refresh);
+    }
     // : userDetails == undefined || userDetails == null
     return (
         <View style={{ flex: 1, position: 'relative' }}>

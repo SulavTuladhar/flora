@@ -10,16 +10,16 @@ import { login } from '../features/auth/reducers';
 
 const MainScreen = props => {
 
-    const dispatch = useDispatch();
-    useEffect(() => {
-        loginow();
-    }, []);
-    async function loginow() {
-        try {
-        } catch (err) {
-            console.log('error is >> ', err);
-        }
-    }
+    // const dispatch = useDispatch();
+    // useEffect(() => {
+    //     loginow();
+    // }, []);
+    // async function loginow() {
+    //     try {
+    //     } catch (err) {
+    //         console.log('error is >> ', err);
+    //     }
+    // }
     // async function saveUserDetail() {
     //     const newData = {
     //         'name': name,
